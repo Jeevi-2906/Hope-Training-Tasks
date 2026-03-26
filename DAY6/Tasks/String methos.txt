@@ -1,0 +1,105 @@
+-> String represents a sequence of characters used for storing and manipulating text.
+-> String Methods:
+1. int length() - 
+    This method provides the total count of characters in the string.
+        public class Main {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.length());
+            }
+        }
+    OP: 13
+
+2. charAt(int i) - 
+    This method returns the character at ith index.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.charAt(7));
+            }
+        }
+    OP: W
+
+3. String substring(int i) -
+    This method return the substring from the ith index character to end.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.substring(7));
+                System.out.println(s.substring(7, 12));
+            }
+        }
+    OP: World!
+    OP: World
+
+4. String concat( String str) -
+    This method appends the given string to the end of the current string.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.concat("!!!"));
+            }
+        }
+    OP: Hello, World!!!!
+
+5. int indexOf(String s, int i) -
+    This method returns the index within the string of the first occurrence of the specified string, starting at the specified index. 
+    If the specified string s is not found in the input string, the method returns -1 by default.
+        public class Geeks {
+            public static void main(String[] args) {
+                String str = "Hello, World!";
+                System.out.println(str.indexOf("l", 4));
+            }
+        }
+    OP: 10
+
+6.  boolean equals(Object otherObj) - 
+    This method compares this string to the specified object.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.equals("Hello, World!"));
+            }
+        }
+    OP: true
+
+7. String toLowerCase() -
+    This method converts all the characters in the String to lower case.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.toLowerCase());
+            }
+        }
+    OP: hello, world!
+
+8. String toUpperCase() -
+    This method converts all the characters in the String to upper case.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.toUpperCase());
+            }
+        }
+    OP: HELLO, WORLD!
+
+9. boolean contains(CharSequence sequence) 
+    This method returns true if string contains the given string.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.contains("World"));
+            }
+        }
+    OP: true
+
+10. String replace(char oldChar, char newChar) 
+    This method returns a new string where all instances of oldChar are replaced by newChar.
+        public class Geeks {
+            public static void main(String[] args) {
+                String s = "Hello, World!";
+                System.out.println(s.replace('l', 'x'));
+            }
+        }
+    OP: Hexxo, Worxd!
+
